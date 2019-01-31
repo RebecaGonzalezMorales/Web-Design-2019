@@ -1,0 +1,70 @@
+/* Desktop Version */
+/* @media only screen and (min-width: 1200px) { */
+body{
+    margin: 0;
+    background-color: lightgrey;
+}
+section {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    left: 15vw;
+}
+.tiles {
+    background-color: rgba(5,5,5, 90%);
+    height: 40vw;
+    width: 40vw;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 450.8px;
+    max-width: 450.8px;
+    margin: 2vw;
+    float:left;
+    padding: 20%;
+    box-sizing: border-box;
+    border-radius: 1%;
+}
+.tiles:hover {
+    background-color: rgba(10, 10, 10, 85%);
+}
+.tiles p {
+    margin: 0px;
+}
+/* } */
+/* Phone Screen */
+@media only screen and (max-width: 599px) {
+    section {
+        top: 10vh;
+    }
+    .tiles {
+        height: 40vw;
+        width: 40vw;
+        min-width: 400px;
+        min-height: 400px;
+        max-height: 450.8px;
+        max-width: 450.8px;
+        margin: 4vw;
+        padding: 20%;
+    }
+}
+/* Tablet & Landscape */
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    section {
+        top: 7vh;
+    }
+    .tiles {
+        height: 30vw;
+        width: 30vw;
+        min-width: 200px;
+        min-height: 200px;
+        max-height: 450.8px;
+        max-width: 450.8px;
+        margin: 2vw;
+        padding: 15%;
+    }
+
+}
